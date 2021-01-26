@@ -12,11 +12,11 @@
         {{#if existsID}}
             <ul class="record">
                 <li class="record__title">Сведения о брони:</li>
-                <li class="record__info"><span class="text_lightblue">ID:</span> {{record._id}}</li>
-                <li class="record__info"><span class="text_lightblue">Имя:</span> {{record.name_people}}</li>
-                <li class="record__info"><span class="text_lightblue">Номер для связи:</span> {{record.tel}}</li>
-                <li class="record__info"><span class="text_lightblue">Дата брони:</span> {{record.date_format}}</li>
-                <li class="record__info"><span class="text_lightblue">Забронированный столик:</span> {{record.table}}</li>
+                <li class="record__info"><span class="color_lightblue">ID:</span> {{record._id}}</li>
+                <li class="record__info"><span class="color_lightblue">Имя:</span> {{record.name_people}}</li>
+                <li class="record__info"><span class="color_lightblue">Номер для связи:</span> {{record.tel}}</li>
+                <li class="record__info"><span class="color_lightblue">Дата брони:</span> {{record.date_format}}</li>
+                <li class="record__info"><span class="color_lightblue">Забронированный столик:</span> {{record.table}}</li>
             </ul>
             <div class="record__buttons">
                 <button class="record__buttons__button" onclick="location.href += '/confirm'">Подтвердить бронь</button>

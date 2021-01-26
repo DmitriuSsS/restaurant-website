@@ -12,9 +12,9 @@
         <main class="main">
             {{#each records}}
                 <section class="records__record link_section" onclick="location.href = '/booking/{{this._id}}'">
-                    <div class="record__arg"><span class="text_lightblue">Бронь: ID=</span>{{this._id}}</div>
-                    <div class="record__arg"><span class="text_lightblue">Дата брони:</span> {{this.date_format}}</div>
-                    <div class="record__arg"><span class="text_lightblue">Забронированный столик:</span> {{this.table}}</div>
+                    <div class="record__arg"><span class="color_lightblue">Бронь: ID=</span>{{this._id}}</div>
+                    <div class="record__arg"><span class="color_lightblue">Дата брони:</span> {{this.date_format}}</div>
+                    <div class="record__arg"><span class="color_lightblue">Забронированный столик:</span> {{this.table}}</div>
                 </section>
             {{/each}}
         </main>
