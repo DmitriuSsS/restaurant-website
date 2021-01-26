@@ -29,7 +29,7 @@
             <button class="post_form__button post_form__line">Заказать столик</button>
         </form>
 
-        <h1 class="error">{{#if haveRecord}}{{error}}{{/if}}</h1>
+        <h1 class="error">{{#if haveRecord}}{{error}}<br>{{no_free_tables}}{{/if}}</h1>
     </main>
     {{> footer}}
 </body>

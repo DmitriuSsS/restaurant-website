@@ -87,7 +87,8 @@ const create_record = [
                         res.render('booking', {
                             tables: ['1ый столик', '2ой столик', '3ий столик', '4ый столик'],
                             min_date: new Date().toISOString().split('T')[0],
-                            error: `К сожалению столик, что вы выбрали занят, пожалуйста выберите другой столик`,
+                            error: 'К сожалению столик, что вы выбрали занят, пожалуйста выберите другой столик',
+                            no_free_tables: `Занятые столики на выбранный день: ${records_info.map(record => record.table).join(',')}`,
                             record: record,
                             haveRecord: true
                         });
