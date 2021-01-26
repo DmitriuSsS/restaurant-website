@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Резервирование столика</title>
+    {{> css}}
+    <link rel="stylesheet" href="/stylesheets/booking.css">
+</head>
+<body>
+    {{> background}}
+    {{> header}}
+    <main class="main">
+        <form class="post_form" method="post">
+            <label class="post_form__line">Ваше имя: <input name="name" type="text" value="{{#if haveRecord}}{{record.name_people}}{{/if}}" required></label>
+            <label class="post_form__line">Ваш email: <input name="mail" type="email" value="{{#if haveRecord}}{{record.mail}}{{/if}}" required></label>
+            <label class="post_form__line">Ваш телефон: <input name="tel" type="tel" value="{{#if haveRecord}}{{record.tel}}{{/if}}" required></label>
+            <label class="post_form__line">Дата на которую желаете заказать столик:
+                <input name="date" min="{{min_date}}" value="{{#if haveRecord}}{{record.date_format}}{{/if}}" type="date" required>
+            </label>
+            <label class="post_form__line">
+                Желаемый столик:
+                <select name="table" id="select" required>
+                    <option disabled>Выберите столик</option>
+                    {{#each tables}}
+                        <option>{{this}}</option>
+                    {{/each}}
+                </select>
+            </label>
+            <button class="post_form__button post_form__line">Заказать столик</button>
+        </form>
+
+        <h1 class="error">{{#if haveRecord}}{{error}}{{/if}}</h1>
+    </main>
+    {{> footer}}
+</body>
+</html>

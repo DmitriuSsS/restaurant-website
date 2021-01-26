@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Ресторан</title>
+        {{> css}}
+        <link rel="stylesheet" href="/stylesheets/main.css">
+    </head>
+    <body class="background_black">
+        {{> background}}
+        {{> header}}
+        <main class="main">
+            <section class="main__ref link_section" onclick="location.href = 'booking'">
+                <img class="main__ref__img" src="/images/booking.jpg" alt="Изображение для перехода на страницу бронирования">
+            </section>
+        </main>
+        {{> footer}}
+    </body>
+</html>

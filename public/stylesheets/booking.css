@@ -1,0 +1,26 @@
+.main {
+    flex-direction: column;
+}
+
+.post_form {
+    margin: 20px auto auto auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 70%;
+}
+
+.post_form__line {
+    margin: 5px;
+}
+
+.post_form__button {
+    width: 50%;
+    margin: 5px auto;
+}
+
+.error {
+    margin: auto auto 20px auto;
+    font-size: 30px;
+    color: red;
+}

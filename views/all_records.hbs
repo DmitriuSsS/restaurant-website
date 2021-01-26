@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Все записи</title>
+        {{> css}}
+        <link rel="stylesheet" href="/stylesheets/all_records.css">
+    </head>
+    <body>
+        {{> background}}
+        {{> header}}
+        <main class="main">
+            {{#each records}}
+                <section class="records__record link_section" onclick="location.href = '/booking/{{this._id}}'">
+                    <div class="record__arg"><span class="text_lightblue">Бронь: ID=</span>{{this._id}}</div>
+                    <div class="record__arg"><span class="text_lightblue">Дата брони:</span> {{this.date_format}}</div>
+                    <div class="record__arg"><span class="text_lightblue">Забронированный столик:</span> {{this.table}}</div>
+                </section>
+            {{/each}}
+        </main>
+        {{> footer}}
+    </body>
+</html>

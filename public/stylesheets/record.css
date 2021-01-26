@@ -1,0 +1,32 @@
+.main {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.record {
+    font-size: 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.record__title,
+.record__info {
+    margin: 10px auto 0 auto;
+}
+
+.record__title {
+    margin-bottom: 20px;
+}
+
+.record__buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.record__buttons__button {
+    margin: 10px auto 20px auto;
+    height: 30px;
+    width: 30%;
+
+    cursor: pointer;
+}

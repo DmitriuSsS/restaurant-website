@@ -1,0 +1,29 @@
+.main {
+    flex-wrap: wrap;
+
+    overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar{
+    width: 0;
+}
+
+.records__record {
+    height: 200px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 15px;
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    border: 3px white solid;
+    margin: 20px auto;
+}
+
+.record__arg {
+    margin: auto;
+}
